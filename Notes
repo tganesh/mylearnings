@@ -1,1 +1,75 @@
 Partial Views - to review previously entered values in the case processing. Similar to Review harness.
+
+
+-- Exam --
+
+1 The two true statements for Data Pages in Constellation applications are:
+
+✅ Developers can use Browser DevTools to review Data Pages cached in Constellation applications.
+✅ In Constellation, caching of Data Pages occurs on both the server side and the client side.
+
+Explanation:
+Client-side caching helps improve performance, not degrade it — so the first statement is false.
+Browser DevTools can be used to inspect cached data, making this true.
+Constellation uses both client-side and server-side caching to enhance performance — this is true.
+Requestor-level Data Pages are not always left open; they can expire or be removed based on scope and configuration — this is false.
+
+
+
+2 The correct key difference in building Pega Platform™ applications using the Constellation architecture compared to building applications on the Traditional architecture is:
+
+✅ View configuration follows the Case Life Cycle design.
+
+Explanation:
+Common, high-value action patterns require extensive customization: This is not specific to Constellation. Both architectures can require customization for certain actions, so this is not a key differentiator.
+Constellation applications require complex Action sets and Activities: This is not a key difference. Both architectures might require action sets and activities depending on the complexity of the application, but the Constellation architecture emphasizes a more streamlined and declarative approach.
+(Pega Correct)Field Types dictate the UI controls available in Constellation Views: This is incorrect as Field Types determine the data types but don’t directly determine the UI controls in Constellation.
+View configuration follows the Case Life Cycle design: This is true for Constellation architecture. Views and user interfaces in Constellation are designed with the case life cycle in mind, making them more aligned with case management principles. This contrasts with the traditional approach, where views might be designed independently of case stages.
+
+
+3 These are the three primary components of Constellation that impact the development experience when building a Pega application:
+
+Constellation Design System
+Provides a standardized, modern, and accessible UI/UX framework for building interfaces.
+Ensures consistency and accelerates UI development with reusable templates.
+Constellation Architecture
+A modern, front-end-driven architecture that separates the UI from the backend logic.
+Promotes low-code/no-code development aligned with the Case Life Cycle.
+Constellation DX API
+A RESTful API that delivers UI metadata and data to front-end clients.
+Powers the interaction between the Pega server and the front-end (often React-based) clients.
+The other options are incorrect because:
+
+Pega Cases, Assignments, and open REST API: These are general features of Pega, not specific to Constellation.
+Constellation templates, Constellation DX API, and React library: While partially correct, this omits the Constellation Design System, which is critical.
+Traditional UI architecture is not part of Constellation; it refers to the older approach.
+
+
+4 The correct answer is:
+
+✅ Constellation DX API focuses on View-based authoring rather than Section-based authoring.
+
+Explanation of Each Option:
+❌ "Constellation DX API requires extensive customization to work with the out-of-the-box Constellation UI"
+Incorrect. The Constellation DX API is designed to work seamlessly with the out-of-the-box Constellation UI. It reduces the need for customization by leveraging standardized metadata-driven views.
+✅ "Constellation DX API focuses on View-based authoring rather than Section-based authoring"
+Correct. Unlike Traditional architecture that uses section-based UI design, Constellation uses view-based authoring tied closely to the case life cycle, making design more modular and consistent.
+❌ "Constellation DX API increases the number of API calls compared to the Traditional DX API"
+Incorrect. The Constellation DX API is optimized for fewer, more efficient API calls, delivering both UI metadata and data in single responses when possible.
+❌ "Constellation DX API always use JWT Tokens as the authentication type"
+Incorrect. JWT is one supported authentication method, but not the only one. OAuth, basic auth, and other token mechanisms can also be used depending on the setup.
+
+5 Explanation:
+Widgets in Constellation are out-of-the-box UI components that provide application users with helpful functions to support common actions, such as:
+
+Viewing recent cases
+Displaying user or task-specific information
+Providing access to frequently used features (e.g., recent items, assignments, etc.)
+Enabling dashboards, summaries, or search components
+They are reusable, configurable, and designed to enhance the user experience with minimal customization.
+
+Why the other options are incorrect:
+Full Page View: Refers to the layout style, not a component that offers functional actions.
+Field Groups: Organize related fields in a form but do not provide action-based functionality.
+Navigation bar: Helps users navigate the app, but it’s not a UI component for supporting actions directly.
+
